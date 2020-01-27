@@ -1,4 +1,4 @@
-# Docker
+# Docker service for daily SSL expiriy SLACK notifications.
 
 ## Setup instructions
 
