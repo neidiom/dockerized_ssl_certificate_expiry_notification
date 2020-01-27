@@ -2,6 +2,7 @@ version: '3'
 services:
   ssl_domain_expiry_check:
     container_name: ssl_certificate_expiry_check
+    restart: always
     build:
       context: .
       dockerfile: Dockerfile
