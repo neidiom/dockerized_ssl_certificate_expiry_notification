@@ -1,0 +1,9 @@
+version: '3'
+services:
+  ssl_domain_expiry_check:
+    container_name: ssl_certificate_expiry_check
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/srv/app:rw

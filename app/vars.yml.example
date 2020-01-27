@@ -1,0 +1,6 @@
+---
+ssl_expiry_days_check: 30
+slack_webhook: 'https://hooks.slack.com/services/xxxxxxxxxxxxx/xxxxxxxxxxxxxx/xxxxxxxxxxxxxxxxxxxxx'
+domains:
+- github.com
+- gitlab.com
