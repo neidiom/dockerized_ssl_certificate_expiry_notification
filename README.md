@@ -11,7 +11,7 @@ Follow the steps below.
 ````
 cp app/vars.yml.example app/vars.yml
 ````
-### 1. Edit the variable file.
+### 2. Edit the variable file.
 
 Edit the `vars.yml` file and put your Slack webhook and domains.
 
