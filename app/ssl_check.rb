@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env ruby -W:no-deprecated
 require 'ssl_expiry'
 require 'slack-notifier'
 require 'yaml'

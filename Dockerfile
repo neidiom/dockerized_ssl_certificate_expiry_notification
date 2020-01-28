@@ -1,5 +1,5 @@
 FROM ruby:2.7.0-buster
-RUN apt-get update && apt-get -y install --force-yes cron
+RUN apt-get update && apt-get -y install --allow-downgrades --allow-remove-essential --allow-change-held-packages rsyslog cron
 COPY ./app/. /srv/app/
 WORKDIR /srv/app
 RUN bundle exec gem update --system
