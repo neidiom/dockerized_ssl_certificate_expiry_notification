@@ -1,0 +1,28 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    chronic (0.10.2)
+    connection_pool (2.2.2)
+    net-http-persistent (3.1.0)
+      connection_pool (~> 2.2)
+    openssl (2.1.2)
+    slack-notifier (2.3.2)
+    ssl_expiry (1.0.2)
+      net-http-persistent (~> 3)
+      openssl (~> 2)
+    whenever (1.0.0)
+      chronic (>= 0.6.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  slack-notifier!
+  ssl_expiry!
+  whenever!
+
+RUBY VERSION
+   ruby 2.7.0p0
+
+BUNDLED WITH
+   2.1.2
