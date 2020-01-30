@@ -6,5 +6,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args:
+        TZ: 'America/Los_Angeles'
     volumes:
       - ./app:/srv/app:rw
+    #environment:
+    #  TZ: 'America/Los_Angeles'

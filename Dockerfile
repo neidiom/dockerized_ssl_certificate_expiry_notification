@@ -6,4 +6,8 @@ RUN gem update --system
 RUN gem install bundler
 RUN bundle install
 RUN whenever -f /srv/app/whenever/config/schedule.rb --update-crontab
+#ENV TZ=America/Los_Angeles
+ARG TZ
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo "$TZ" > /etc/timezone
+#RUN dpkg-reconfigure -f noninteractive tzdata
 CMD ["cron", "-f", "-l", "15"]
