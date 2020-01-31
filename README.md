@@ -29,7 +29,7 @@ That's it.
 Enter the container, check the cron job, manually run the script.
 
 ````
-docker exec -it ssl_certificate_expiry_check /bin/bash
+sudo docker exec -it ssl_certificate_expiry_check /bin/bash
 crontab -l
 /bin/bash -l -c 'ruby /srv/app/ssl_check.rb'
 ````
