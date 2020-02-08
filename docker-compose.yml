@@ -7,8 +7,8 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        TZ: 'America/Los_Angeles'
+        TZ: ${TZ}
     volumes:
       - ./app:/srv/app:rw
-    #environment:
-    #  TZ: 'America/Los_Angeles'
+    env_file:
+      - .env
