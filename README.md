@@ -24,6 +24,20 @@ Edit the `vars.yml` file and put your Slack webhook and domains.
 
 That's it.
 
+## Custom ports
+
+To check for certificated on custom ports use the format below.
+
+````
+---
+ssl_expiry_days_check: 30
+slack_webhook: 'https://hooks.slack.com/services/xxxxxx/xxxxx/xxxxxxx'
+domains:
+- github.com
+- gitlab.com
+- my-domain-with-custom-port.com:8080
+````
+
 ## Troubleshoot
 
 Enter the container, check the cron job, manually run the script.
