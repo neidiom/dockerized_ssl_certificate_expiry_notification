@@ -4,17 +4,16 @@
 
 Follow the steps below.
 
-### 1. Create the variable file.
-
-* crete the `vars.yml` file from the example one.
+### 1. Build the configuration files.
 
 ````
-cp app/vars.yml.example app/vars.yml
+./build.sh
 ````
 
-### 2. Edit the variable file.
+### 2. Edit the configuration files.
 
-Edit the `vars.yml` file and put your Slack webhook and domains.
+* Edit the `vars.yml` file and put your Slack webhook and domains.
+* Edit the `.env` file and set your timezone.
 
 ### 3. Build the container
 
