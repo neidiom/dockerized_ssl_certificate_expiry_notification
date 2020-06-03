@@ -2,6 +2,8 @@
 VARS_FILE=app/vars.yml
 ENV_FILE=.env
 
+docker image prune --force
+
 if [ -f "${VARS_FILE}" ] && [ -f "${ENV_FILE}" ]; then
   echo "Found ${VARS_FILE} and ${ENV_FILE} conf files, building docker containers."
   sudo docker-compose build
