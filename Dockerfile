@@ -1,6 +1,11 @@
-FROM ruby:2.7.0-buster
+FROM ruby:2.7.1-buster as base
 ARG TZ
+ENV TZ=${TZ}
+
+FROM base as ff_install_debian_packages
 RUN apt-get update && apt-get -y install --allow-downgrades --allow-remove-essential --allow-change-held-packages cron
+
+FROM ff_install_debian_packages as gem_install
 COPY ./app/. /srv/app/
 WORKDIR /srv/app
 RUN gem update --system
