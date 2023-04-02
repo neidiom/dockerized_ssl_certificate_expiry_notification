@@ -5,7 +5,7 @@ require 'ssl_expiry'
 require 'slack-notifier'
 require 'yaml'
 
-vars = YAML.load_file('/srv/app/vars.yml')
+vars = YAML.load_file('vars.yml')
 
 results = SSLExpiry::SSLExpiry.check_certificates(vars['domains'])
 
