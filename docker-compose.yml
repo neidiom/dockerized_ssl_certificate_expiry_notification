@@ -6,7 +6,7 @@ services:
     restart: always
     image: ssl_certificate_expiry_check:latest
     build:
-      context: .
+      context: ./app/
       dockerfile: Dockerfile
       args:
         TZ: ${TZ}

@@ -6,8 +6,8 @@ docker image prune --force
 
 if [ -f "${VARS_FILE}" ] && [ -f "${ENV_FILE}" ]; then
   echo "Found ${VARS_FILE} and ${ENV_FILE} conf files, building docker containers."
-  sudo docker-compose build
-  sudo docker-compose up --force-recreate -d ssl_domain_expiry_check
+  docker compose build
+  docker compose up --force-recreate -d ssl_domain_expiry_check
 fi
 
 if test -f "${VARS_FILE}"; then

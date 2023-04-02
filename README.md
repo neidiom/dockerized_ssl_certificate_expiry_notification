@@ -46,3 +46,9 @@ sudo docker exec -it ssl_certificate_expiry_check /bin/bash
 crontab -l
 /bin/bash -l -c 'ruby /srv/app/ssl_check.rb'
 ````
+
+# Docker related
+
+````
+BUILDKIT_PROGRESS=plain docker compose build
+````
